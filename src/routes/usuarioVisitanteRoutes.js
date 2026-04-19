@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.Routerouter();
+const router = express.Router();
 const usuarioVisitanteSchema = require("../models/usuarioVisitanteModel");
 
 router.post("/usuarioVisitante" , (req, res)=>{
