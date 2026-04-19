@@ -36,4 +36,6 @@ const usuarioEmpresaSchema = mongoose.Schema({
         ref: 'Company',
       },
     ]
-})
+});
+
+module.exports = mongoose.model("usuarioEmpresa", usuarioEmpresaSchema);
