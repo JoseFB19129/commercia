@@ -31,4 +31,22 @@ router.post('/registrar', async (req, res) => {
         res.status(400).json({ mensaje: "Error al registrar la empresa", error });
     }
 });
+
+// Ruta para eliminar una empresa por su ID (Item 2.b)
+router.delete('/eliminar/:id', async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const empresaEliminada = await Empresa.findByIdAndDelete(id);
+
+        if (!empresaEliminada) {
+            return res.status(404).json({ mensaje: "La empresa no existe" });
+        }
+
+        res.status(200).json({ mensaje: "Empresa eliminada correctamente", empresaEliminada });
+    } catch (error) {
+        res.status(500).json({ mensaje: "Error al eliminar la empresa", error });
+    }
+});
+
 module.exports = router;
