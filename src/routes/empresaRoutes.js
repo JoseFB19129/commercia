@@ -49,4 +49,23 @@ router.delete('/eliminar/:id', async (req, res) => {
     }
 });
 
+// 4. Modificar una empresa (Item 2.d)
+router.put('/actualizar/:id', async (req, res) => {
+    const { id } = req.params;
+    const datosNuevos = req.body;
+
+    try {
+        // { new: true } sirve para que nos devuelva el objeto ya modificado, no el viejo
+        const empresaActualizada = await Empresa.findByIdAndUpdate(id, datosNuevos, { new: true });
+        
+        if (!empresaActualizada) {
+            return res.status(404).json({ mensaje: "Empresa no encontrada para actualizar" });
+        }
+
+        res.status(200).json({ mensaje: "Empresa actualizada con éxito", empresaActualizada });
+    } catch (error) {
+        res.status(400).json({ mensaje: "Error al actualizar la empresa", error });
+    }
+});
+
 module.exports = router;
