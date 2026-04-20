@@ -11,6 +11,7 @@ app.use(express.json()); // Permitir que la API reciba JSON
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/commercia_db';
 
 mongoose.connect(MONGO_URI)
+family: 4
     .then(() => console.log('✅ Conexión exitosa a MongoDB Atlas'))
     .catch(err => console.error('❌ Error de conexión a la DB:', err));
 
