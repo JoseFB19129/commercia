@@ -1,0 +1,27 @@
+{
+  "name": "tecnologias_de_desarrollo",
+  "version": "1.0.0",
+  "description": "��I\u0000n\u0000i\u0000c\u0000i\u0000o\u0000 \u0000d\u0000e\u0000l\u0000 \u0000b\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valsara/Tecnologias_de_desarrollo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/valsara/Tecnologias_de_desarrollo/issues"
+  },
+  "homepage": "https://github.com/valsara/Tecnologias_de_desarrollo#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.5.0"
+  }
+}
