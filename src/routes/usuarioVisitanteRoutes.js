@@ -1,13 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const usuarioVisitanteSchema = require("../models/usuarioVisitanteModel");
+const { verifyToken } = require("../middleware/auth");
+const { 
+    getProfile, 
+    updateProfile, 
+    changePassword, 
+    deleteAccount
+} = require("../controllers/usuarioVisitanteController");
 
-router.post("/usuarioVisitante" , (req, res)=>{
-    const usuarioVisitante = usuarioVisitanteSchema(req.body);
-    usuarioVisitante
-        .save()
-        .then((data)=>res.json(data))
-        .catch((error)=> res.json({ message: error}));
-});
+// Rutas protegidas (solo para visitantes autenticados)
+router.get("/perfil", verifyToken, getProfile);
+router.put("/perfil", verifyToken, updateProfile);
+router.put("/cambiar-contrasena", verifyToken, changePassword);
+router.delete("/cuenta", verifyToken, deleteAccount);
 
 module.exports = router;
