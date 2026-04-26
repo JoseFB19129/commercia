@@ -19,7 +19,7 @@ Los integrantes del equipo con los usuarios de GitHub:
 Este proyecto fue construido utilizando el stack de tecnologías solicitado para la materia:
 * **Entorno de ejecución:** Node.js
 * **Framework Web:** Express.js
-* **Base de Datos:** MongoDB (Motor NoSQL)
+* **Base de Datos:** MongoDB
 * **Seguridad:** JSON Web Tokens (JWT) para autenticación y Bcrypt para el cifrado de contraseñas.
 * **IA utilizada:** Gemini (Google) y ChatGpt para la coneccion a mongo, la instalacion del git, powershell.
 
