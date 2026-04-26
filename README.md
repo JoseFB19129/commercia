@@ -8,13 +8,12 @@
 * **Docente:** Cecilia Ávila.
 
 ## 2. Equipo de Trabajo (InnovApp Solutions)
-A continuación, se relacionan los integrantes del equipo y sus usuarios de GitHub (Requisito de entrega):
+Los integrantes del equipo con los usuarios de GitHub:
 
 | Nombre Completo | Usuario GitHub | Rol Principal |
 | :--- | :--- | :--- |
-| **Sara Sofía Valdés García** | [Tu_Usuario_Aquí] | Desarrolladora Backend & Admin |
-| **Pablo Tomás Forero Salazar** | [Usuario_de_Pablo] | Desarrollador Fullstack |
-| **José Francisco Bernal Castillo** | [Usuario_de_Jose] | Desarrollador Fullstack |
+| **Sara Sofía Valdés García** | [SaraValdes] | Administracion |
+
 
 ## 3. Tecnologías Utilizadas 🛠️
 Este proyecto fue construido utilizando el stack de tecnologías solicitado para la materia:
@@ -22,13 +21,13 @@ Este proyecto fue construido utilizando el stack de tecnologías solicitado para
 * **Framework Web:** Express.js
 * **Base de Datos:** MongoDB (Motor NoSQL)
 * **Seguridad:** JSON Web Tokens (JWT) para autenticación y Bcrypt para el cifrado de contraseñas.
-* **IA utilizada:** Gemini (Google) para la estructuración de modelos de datos y documentación de endpoints.
+* **IA utilizada:** Gemini (Google) y ChatGpt para la coneccion a mongo, la instalacion del git, powershell.
 
 ## 4. Módulo de Administración (Entrega Actual)
-[cite_start]Este módulo permite al Administrador del Sistema gestionar la base del directorio comercial[cite: 33, 88]:
+Este módulo permite al Administrador del Sistema gestionar la base del directorio comercial:
 * **Configuración de Categorías:** CRUD completo para organizar las empresas.
 * **Gestión de Sectores:** Clasificación por actividades comerciales.
-* [cite_start]**Gestión de Usuarios:** Control sobre empresas registradas y visitantes[cite: 93, 94].
+* **Gestión de Usuarios:** Control sobre empresas registradas y visitantes.
 
 ## 5. Instrucciones de Instalación
 1. Clonar el repositorio: `git clone [URL-del-repo]`
