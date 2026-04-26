@@ -16,7 +16,7 @@ Los integrantes del equipo con los usuarios de GitHub:
 
 
 ## 3. Tecnologías Utilizadas 🛠️
-Este proyecto fue construido utilizando el stack de tecnologías solicitado para la materia:
+Este proyecto fue construido por:
 * **Entorno de ejecución:** Node.js
 * **Framework Web:** Express.js
 * **Base de Datos:** MongoDB
