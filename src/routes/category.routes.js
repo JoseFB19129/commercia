@@ -1,11 +1,12 @@
+
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/category.controller');
+const categoryController = require('../controllers/category.controller');
 
-router.post('/', controller.create);
-router.get('/', controller.getAll);
-router.get('/:id', controller.getById);
-router.put('/:id', controller.update);
-router.delete('/:id', controller.delete);
+// Definición de Endpoints para Postman
+router.post('/', categoryController.createCategory);     // Crear
+router.get('/', categoryController.getCategories);       // Consultar todas
+router.put('/:id', categoryController.updateCategory);    // Editar por ID
+router.delete('/:id', categoryController.deleteCategory); // Eliminar por ID
 
 module.exports = router;
