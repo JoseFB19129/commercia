@@ -117,5 +117,6 @@
   "bugs": {
     "url": "https://github.com/JoseFB19129/commercia/issues"
   },
-  "homepage": "https://github.com/JoseFB19129/commercia#readme"
+  "homepage": "https://github.com/JoseFB19129/commercia#readme",
+  "devDependencies": {}
 }
