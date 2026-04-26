@@ -1,11 +1,11 @@
 # Commercia - InnovApp Solutions 🚀
 
 ## 1. Información del Proyecto
-[cite_start]**Commercia** es una solución de comercio digital diseñada para promover la relación comercial entre empresarios y visitantes, permitiendo la búsqueda organizada de servicios y productos por sector y ubicación[cite: 21, 23].
+**Commercia** es una solución de comercio digital diseñada para promover la relación comercial entre empresarios y visitantes, permitiendo la búsqueda organizada de servicios y productos por sector y ubicación.
 
-* [cite_start]**Materia:** Nuevas tecnologías de desarrollo[cite: 7].
-* [cite_start]**Institución:** Fundación Universitaria Konrad Lorenz[cite: 9].
-* [cite_start]**Docente:** Cecilia Ávila[cite: 8].
+* **Materia:** Nuevas tecnologías de desarrollo.
+* **Institución:** Fundación Universitaria Konrad Lorenz.
+* **Docente:** Cecilia Ávila.
 
 ## 2. Equipo de Trabajo (InnovApp Solutions)
 A continuación, se relacionan los integrantes del equipo y sus usuarios de GitHub (Requisito de entrega):
