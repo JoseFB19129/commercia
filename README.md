@@ -1,4 +1,3 @@
-# commercia
 # Commercia - InnovApp Solutions 🚀
 
 ## 1. Información del Proyecto
