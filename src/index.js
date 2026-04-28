@@ -1,22 +1,15 @@
-const express = require('express');
-const mongoose = require('mongoose');
-require('dotenv').config();
+const startServer = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("Mongo conectado");
 
-const app = express();
+    app.listen(3000, () => {
+      console.log("Servidor corriendo en puerto 3000");
+    });
 
-// middleware
-app.use(express.json());
+  } catch (error) {
+    console.log("Error conectando a Mongo:", error);
+  }
+};
 
-// conexión Mongo
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("Mongo conectado"))
-  .catch(err => console.log(err));
-
-// rutas
-app.use('/api/categories', require('./routes/category.routes'));
-
-// puerto
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en puerto ${PORT}`);
-});
+startServer();
