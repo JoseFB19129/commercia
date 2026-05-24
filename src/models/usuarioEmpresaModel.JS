@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcryptjs");
 
 const usuarioEmpresaSchema = mongoose.Schema({
     nombre: {
@@ -16,7 +15,7 @@ const usuarioEmpresaSchema = mongoose.Schema({
         required: true,
         unique: true
     },
-    contrasena:{
+    contrasena: {
         type: String,
         minlength: 8,
         required: true
@@ -40,15 +39,9 @@ const usuarioEmpresaSchema = mongoose.Schema({
     }]
 });
 
-// Encriptar contraseña antes de guardar
-usuarioEmpresaSchema.pre('save', async function(next) {
-    if (!this.isModified('contrasena')) return next();
-    this.contrasena = await bcrypt.hash(this.contrasena, 10);
-    next();
-});
-
-// Método para comparar contraseñas
+// Método para comparar contraseñas (sin middleware)
 usuarioEmpresaSchema.methods.comparePassword = async function(contrasena) {
+    const bcrypt = require('bcryptjs');
     return await bcrypt.compare(contrasena, this.contrasena);
 };
 
